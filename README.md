@@ -1,2 +1,2 @@
 # field-enums
-Rust field enums in Python using PyO3
+Demo on how to use Rust field enums in Python using PyO3
