@@ -1,11 +1,11 @@
 [package]
-name = "field-enums"
+name = "rust-field-enums-pyo3"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
-name = "field_enums"
+name = "rust_field_enums_pyo3"
 crate-type = ["cdylib"]
 
 [dependencies]
