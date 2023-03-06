@@ -7,8 +7,8 @@ use crate::enums::calculate_day;
 use crate::enums::schedule;
 use crate::enums::Weekday;
 use crate::field_enums::print_int;
-use crate::field_enums::print_prop;
 use crate::field_enums::print_str;
+use crate::field_enums::process_prop;
 use crate::field_enums::Int;
 use crate::field_enums::Str;
 
@@ -19,7 +19,7 @@ fn rust_field_enums_pyo3(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_class::<Int>()?;
     m.add_function(wrap_pyfunction!(schedule, m)?)?;
     m.add_function(wrap_pyfunction!(calculate_day, m)?)?;
-    m.add_function(wrap_pyfunction!(print_prop, m)?)?;
+    m.add_function(wrap_pyfunction!(process_prop, m)?)?;
     m.add_function(wrap_pyfunction!(print_str, m)?)?;
     m.add_function(wrap_pyfunction!(print_int, m)?)?;
     Ok(())
