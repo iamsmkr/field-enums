@@ -1,16 +1,16 @@
 pub mod enums;
-pub mod field_enums;
+pub mod enums_fields;
 
 use pyo3::prelude::*;
 
 use crate::enums::calculate_day;
 use crate::enums::schedule;
 use crate::enums::Weekday;
-use crate::field_enums::print_int;
-use crate::field_enums::print_str;
-use crate::field_enums::process_prop;
-use crate::field_enums::Int;
-use crate::field_enums::Str;
+use crate::enums_fields::print_int;
+use crate::enums_fields::print_str;
+use crate::enums_fields::process_prop;
+use crate::enums_fields::Int;
+use crate::enums_fields::Str;
 
 #[pymodule]
 fn rust_field_enums_pyo3(_py: Python, m: &PyModule) -> PyResult<()> {
